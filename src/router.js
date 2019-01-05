@@ -14,22 +14,17 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/stocks',
+      name: 'stocks',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('./views/About.vue')
+      component: () => import('@/components/Stocks.vue')
     },
     {
-      path: "/buy-stock",
-      name: "buyStock",
-      component: () => import("@/components/BuyStock.vue")
+      path: "/profile",
+      name: "profile",
+      component: () => import("@/components/Profile.vue")
     },
-    {
-      path: "/stock-details",
-      name: "stockDetails",
-      component: () => import("@/components/StockDetails.vue")
-    }
   ]
 })
